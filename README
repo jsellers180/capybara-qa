@@ -1,0 +1,32 @@
+To run the feature files on OSX
+-------------------------------
+
+Step 1 - Install homebrew & rbenv
+
+Open a new Terminal and run the following commands:
+```ruby
+Install Homebrew
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Install rbenv
+$ brew install rbenv
+```
+Open a new terminal tab (command + t) and verify rbenv is installed
+```ruby
+$ rbenv
+```
+
+Step 2 - Clone the repository
+
+Step 3 - cd (change directory) into the cloned repo and install Ruby
+```ruby
+$ cd /capybara-qa
+$ rbenv install (This will automatically install the ruby version the tests are using)
+$ rbenv global 2.3.1
+$ rbenv rehash
+```
+Step 4 - Install the required gems. Execute:
+```ruby
+$ gem install bundler
+$ bundle install
+```
